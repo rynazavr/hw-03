@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Playfair Display", "Arial", sans-serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main-class {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/*NAVIGATION*/
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 99px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.navigation-list li {
+  display: inline-block;
+}
+.navigation-list a {
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 24px;
+  color: #626262;
+}
+.navigation-list li:not(:last-child) {
+  margin-right: 60px;
+}
+.navigation-list a:hover,
+.navigation-list a:focus {
+  color: #03a9f4;
+}
+
+/*ARTICLES*/
+.article-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
+.article-list li {
+  width: 420px;
+  display: inline-block;
+  margin-bottom: 133px;
+}
+.article-list li:not(:nth-child(2n)) {
+  margin-right: 60px;
+}
+.article-list li:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+.article-list h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+.article-category {
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #b4ad9e;
+  line-height: 17px;
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+.article-content {
+  font-size: 14px;
+}
+
+.articles-image {
+  margin-bottom: 30px;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  background-color: #ffffff;
+  border: 1px solid #626262;
+  color: #626262;
+  padding: 18px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 60px auto 70px;
+  cursor: pointer;
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
